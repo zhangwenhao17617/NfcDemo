@@ -137,24 +137,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         infoView = (TextView) findViewById(R.id.promt);
-        infoView.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if (s.toString().length() > 0){
-
-                }
-            }
-        });
         nfcAdapter = NfcAdapter.getDefaultAdapter(getApplicationContext());
         if (nfcAdapter == null) {
             showErrorMessages("Device doesn't support NFC!");
