@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@android:drawable/edit_text" >
+
+        <TextView
+            android:id="@+id/promt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            android:text="wait" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/getTagInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tag info"/>
+    <Button
+        android:id="@+id/writeNFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="write nfc"
+        android:visibility="visible"/>
+    <Button
+        android:id="@+id/authNFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="auth nfc"
+        android:visibility="visible"/>
+
+</LinearLayout>
